@@ -7,7 +7,13 @@
  */
 
 include '../controller/CreditCardController.php';
+include '../helper/ObjectHelper.php';
 
 $controller = new CreditCardController();
+$objectHelper = new \helper\ObjectHelper();
+
+if ($_POST) {
+    return $controller->validateCreditCard($objectHelper::createObjectFromPOST($_POST));
+}
 
 return $controller->renderCreditCardView();

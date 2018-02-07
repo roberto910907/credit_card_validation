@@ -1,5 +1,7 @@
 <?php
 
+use model\CreditCard;
+
 class CreditCardController
 {
     /**
@@ -9,19 +11,19 @@ class CreditCardController
      */
     public function renderCreditCardView()
     {
-       return (include '../view/validation_view.php');
+        return (include '../view/validation_view.php');
     }
 
     /**
-     * Main method for validating a credit card number
+     * Main method for validating a credit card object
      *
-     * @param string $creditCardNumber
+     * @param CreditCard $creditCard
      *
      * @return bool
      */
-    public function validateCreditCard($creditCardNumber)
+    public function validateCreditCard(CreditCard $creditCard)
     {
-        return $this->isValidCreditCardNumber($creditCardNumber);
+        return $this->isValidCreditCardNumber($creditCard->getCardNumber());
     }
 
     /**
@@ -39,5 +41,7 @@ class CreditCardController
         foreach ($cardDigitsReversed as $index => $digit) {
 
         }
+
+        echo "valid card";
     }
 }

@@ -1,4 +1,6 @@
 <?php
+
+namespace model;
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.
  * @version Exercise v1.0 06/02/18 11:29 PM
@@ -6,8 +8,8 @@
 
 class CreditCard
 {
+    private $cvv;
     private $cardNumber;
-    private $holderName;
     private $expirationDate;
 
     public function __construct($cardNumber)
@@ -58,19 +60,19 @@ class CreditCard
     /**
      * @return mixed
      */
-    public function getHolderName()
+    public function getCvv()
     {
-        return $this->holderName;
+        return $this->cvv;
     }
 
     /**
-     * @param mixed $holderName
+     * @param mixed $cvv
      *
      * @return CreditCard
      */
-    public function setHolderName($holderName)
+    public function setCvv($cvv)
     {
-        $this->holderName = $holderName;
+        $this->cvv = $cvv;
 
         return $this;
     }

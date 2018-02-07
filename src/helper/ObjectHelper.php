@@ -4,13 +4,11 @@ namespace helper;
 
 use model\CreditCard;
 
-include '../model/CreditCard.php';
-
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.
  * @version Exercise v1.0 07/02/18 12:31 AM
  */
-class ObjectHelper
+abstract class ObjectHelper
 {
     /**
      * Creating CreditCard object model from $_POST data

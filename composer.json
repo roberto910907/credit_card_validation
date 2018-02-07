@@ -1,0 +1,20 @@
+{
+  "name": "StackBuilder/Exercise",
+  "authors": [
+    {
+      "name": "Roberto Rielo",
+      "email": "roberto910907@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {}
+}

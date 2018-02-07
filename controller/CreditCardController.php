@@ -3,6 +3,16 @@
 class CreditCardController
 {
     /**
+     * Render the credit card validation view
+     *
+     * @return string
+     */
+    public function renderCreditCardView()
+    {
+       return (include '../view/validation_view.php');
+    }
+
+    /**
      * Main method for validating a credit card number
      *
      * @param string $creditCardNumber

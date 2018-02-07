@@ -1,7 +1,8 @@
 <h1 align="center">
-    <a href="https://www.stackbuilders.com/es/index/" target="_blank">
-        <img src="https://www.stackbuilders.com/assets/images/stack-builders-logo-nav-horizontal.svg" />
+<a href="https://www.stackbuilders.com/es/index/" target="_blank">
+        <img src="https://www.stackbuilders.com/assets/images/stack-builders-logo-nav-horizontal.svg" width="240px"/>
     </a>
+    StackBuilders
 </h1>
 
 Exercise

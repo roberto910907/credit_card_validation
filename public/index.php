@@ -8,8 +8,12 @@
 
 include '../controller/CreditCardController.php';
 include '../helper/ObjectHelper.php';
+include '../validator/CreditCardValidator.php';
 
-$controller = new CreditCardController();
+$creditCardValidator = new CreditCardValidator();
+
+/* Simulating Dependency Injection when objects are created and provided to class, now it's easy to be changed to a different one */
+$controller = new CreditCardController($creditCardValidator);
 $objectHelper = new \helper\ObjectHelper();
 
 if ($_POST) {

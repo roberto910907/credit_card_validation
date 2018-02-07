@@ -4,6 +4,18 @@ use model\CreditCard;
 
 class CreditCardController
 {
+    private $creditCardValidator;
+
+    /**
+     * Constructor.
+     *
+     * @param CreditCardValidator $creditCardValidator
+     */
+    public function __construct(CreditCardValidator $creditCardValidator)
+    {
+        $this->creditCardValidator = $creditCardValidator;
+    }
+
     /**
      * Render the credit card validation view
      *
@@ -36,12 +48,6 @@ class CreditCardController
      */
     public function isValidCreditCardNumber($creditCardNumber)
     {
-        $cardDigitsReversed = array_reverse(str_split($creditCardNumber));
-
-        foreach ($cardDigitsReversed as $index => $digit) {
-
-        }
-
-        echo "valid card";
+        return $this->creditCardValidator->validate($creditCardNumber);
     }
 }

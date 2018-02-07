@@ -13,9 +13,9 @@ This is the source code of the exercise #1
 Requirements
 ------------
 
-You need [composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) to install PHP packages.
 A PHP Web Server like [Nginx](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/) or [Apache](http://httpd.apache.org/docs/2.4/es/install.html).
 
+> Note: make sure you're using PHP 7.1 or higher and have [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) installed. If you don't, start by installing Composer globally on your system.
 
 Installation
 ------------

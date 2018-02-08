@@ -8,6 +8,8 @@ namespace App\Model;
 
 class CreditCard
 {
+    const IS_VALID_RESULT = 'is_valid_card';
+
     private $cvv;
     private $cardNumber;
     private $expirationDate;

@@ -3,21 +3,25 @@
 namespace App\Controller;
 
 use App\Model\CreditCard;
+use App\Session\Interfaces\SessionInterface;
 use App\Validator\CreditCardValidator;
 use App\Validator\Interfaces\ValidatorInterface;
 
 class CreditCardController
 {
+    private $session;
     private $creditCardValidator;
 
     /**
      * Constructor.
      *
      * @param ValidatorInterface $creditCardValidator
+     * @param SessionInterface   $session
      */
-    public function __construct(ValidatorInterface $creditCardValidator)
+    public function __construct(ValidatorInterface $creditCardValidator, SessionInterface $session)
     {
         $this->creditCardValidator = $creditCardValidator;
+        $this->session = $session;
     }
 
     /**
@@ -52,7 +56,7 @@ class CreditCardController
      */
     public function isValidCreditCardNumber($creditCardNumber)
     {
-        $isValid = $this->creditCardValidator->validate($creditCardNumber);
+        $this->session->set(CreditCard::IS_VALID_RESULT, $this->creditCardValidator->validate($creditCardNumber));
 
         return (include __DIR__ . '/../View/validation_view.php');
     }

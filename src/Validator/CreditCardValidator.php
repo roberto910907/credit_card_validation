@@ -23,8 +23,8 @@ class CreditCardValidator implements ValidatorInterface
     {
         $digitsSum = 0;
 
-        // Check if number length is 16
-        if (self::DEFAULT_CARD_LENGTH !== strlen($creditCardNumber)) {
+        // Check if number is not null, blank or length is not 16
+        if (null === $creditCardNumber || '' === $creditCardNumber || self::DEFAULT_CARD_LENGTH !== strlen($creditCardNumber)) {
             return false;
         }
 
@@ -36,6 +36,6 @@ class CreditCardValidator implements ValidatorInterface
             $digitsSum += NumberHelper::digitSum($number);
         }
 
-        return 0 === $digitsSum % 10;
+        return 0 !== $digitsSum && 0 === $digitsSum % 10;
     }
 }

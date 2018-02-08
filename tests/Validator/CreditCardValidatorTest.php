@@ -19,6 +19,16 @@ class CreditCardValidatorTest extends TestCase
         $this->creditCardValidator = new CreditCardValidator();
     }
 
+    public function testNullIsInvalid()
+    {
+        $this->assertFalse($this->creditCardValidator->validate(null));
+    }
+
+    public function testEmptyStringIsInvalid()
+    {
+        $this->assertFalse($this->creditCardValidator->validate(''));
+    }
+
     /**
      * @dataProvider validCreditCardNumberProvider
      *
@@ -62,9 +72,8 @@ class CreditCardValidatorTest extends TestCase
         return [
             ['435345345234'],
             ['323423423423345341'],
-            ['3455464564562345231'],
-            ['123'],
-            ['09836352'],
+            ['0000000000000000'],
+            ['492987010382130'],
         ];
     }
 }

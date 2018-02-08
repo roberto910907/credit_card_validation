@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Model\CreditCard;
 use App\Validator\CreditCardValidator;
+use App\Validator\Interfaces\ValidatorInterface;
 
 class CreditCardController
 {
@@ -12,9 +13,9 @@ class CreditCardController
     /**
      * Constructor.
      *
-     * @param CreditCardValidator $creditCardValidator
+     * @param ValidatorInterface $creditCardValidator
      */
-    public function __construct(CreditCardValidator $creditCardValidator)
+    public function __construct(ValidatorInterface $creditCardValidator)
     {
         $this->creditCardValidator = $creditCardValidator;
     }

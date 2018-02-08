@@ -27,15 +27,13 @@ $ composer install
 $ ./vendor/bin/phpunit
 ```
 
-[Vendor folder should not be versioned](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md)
-
 Demo Online
 -------------
 
 Demo Application [here](http://23.239.31.230:8181/).
 
-Design Patterns
----------------
+SOLID Principles and Design Patterns
+-------------------------------------------
 * Front Controller
 * MVC
-* Inversion of Control(IOC)
+* Dependency Inversion Principle (DIP)

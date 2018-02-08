@@ -1,13 +1,13 @@
 <?php
+/**
+ * @author  Roberto Rielo <roberto910907@gmail.com>.
+ * @version Exercise v1.0 07/02/18 12:31 AM
+ */
 
 namespace App\Helper;
 
 use App\Model\CreditCard;
 
-/**
- * @author  Roberto Rielo <roberto910907@gmail.com>.
- * @version Exercise v1.0 07/02/18 12:31 AM
- */
 abstract class ObjectHelper
 {
     /**

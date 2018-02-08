@@ -52,6 +52,8 @@ class CreditCardController
      */
     public function isValidCreditCardNumber($creditCardNumber)
     {
-        return $this->creditCardValidator->validate($creditCardNumber);
+        $isValid = $this->creditCardValidator->validate($creditCardNumber);
+
+        return (include __DIR__ . '/../View/validation_view.php');
     }
 }

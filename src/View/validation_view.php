@@ -1,11 +1,12 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="assets/css/style.css">
 
+<?php include 'components/flashbagComponent.php' ?>
+
 <form class="credit-card" action="/index.php" method="POST">
-  <div class="form-header">
+    <div class="form-header">
     <h4 class="title">Credit Card Detail</h4>
   </div>
-
   <div class="form-body">
     <!-- Card Number -->
     <input type="text" id="cardNumber" name="cardNumber" class="card-number" placeholder="Card Number">

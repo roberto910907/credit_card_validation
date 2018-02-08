@@ -12,6 +12,8 @@ use App\Validator\Interfaces\ValidatorInterface;
 
 class CreditCardValidator implements ValidatorInterface
 {
+    const DEFAULT_CARD_LENGTH = 16;
+
     /**
      * @param string $creditCardNumber
      *
@@ -20,6 +22,12 @@ class CreditCardValidator implements ValidatorInterface
     public function validate($creditCardNumber)
     {
         $digitsSum = 0;
+
+        // Check if number length is 16
+        if (self::DEFAULT_CARD_LENGTH !== strlen($creditCardNumber)) {
+            return false;
+        }
+
         $reversedCreditCardNumber = StringHelper::stringToCharArray($creditCardNumber, true);
 
         foreach ($reversedCreditCardNumber as $index => $number) {

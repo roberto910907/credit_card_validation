@@ -12,6 +12,17 @@ use App\Helper\NumberHelper;
 class NumberHelperTest extends TestCase
 {
     /**
+     * @dataProvider digitsSumProvider
+     *
+     * @param $number
+     * @param $digitSum
+     */
+    public function testDigitsSum($number, $digitSum)
+    {
+        $this->assertEquals(NumberHelper::digitSum($number), $digitSum);
+    }
+
+    /**
      * @dataProvider evenNumberProvider
      *
      * @param $number
@@ -50,6 +61,17 @@ class NumberHelperTest extends TestCase
             [44],
             [86],
             [1012],
+        ];
+    }
+
+    public function digitsSumProvider()
+    {
+        return [
+            [18, 9],
+            [5, 5],
+            [17, 8],
+            [12, 3],
+            [1, 1],
         ];
     }
 }

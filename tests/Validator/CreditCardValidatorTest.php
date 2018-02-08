@@ -39,21 +39,32 @@ class CreditCardValidatorTest extends TestCase
         $this->assertFalse($this->creditCardValidator->validate($creditCardNumber));
     }
 
+    /**
+     * List of valid credit card numbers
+     *
+     * @source http://credit-card-generator.2-ee.com/q_valid-working-credit-card-numbers.htm
+     */
     public function validCreditCardNumberProvider()
     {
         return [
-            ['4353453452342343258'],
-            ['3234234234233453488'],
-            ['3455464564562345234'],
+            ['4485699154090711'],
+            ['5122156505424632'],
+            ['4929870103821308'],
+            ['4024007128118261'],
         ];
     }
 
+    /**
+     * List of invalid credit card numbers
+     */
     public function invalidCreditCardNumberProvider()
     {
         return [
             ['435345345234'],
-            ['32342342342334534'],
-            ['345546456456234523'],
+            ['323423423423345341'],
+            ['3455464564562345231'],
+            ['123'],
+            ['09836352'],
         ];
     }
 }

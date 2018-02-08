@@ -23,7 +23,8 @@ Installation
 ```bash
 $ git clone https://github.com/roberto910907/stack_builder.git Exercise
 $ cd Exercise
-$ composer dump-autoload (vendor folder should not be versioned)
+$ composer install
+$ ./vendor/bin/phpunit
 ```
 
 [Vendor folder should not be versioned](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md)

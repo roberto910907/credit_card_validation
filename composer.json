@@ -8,13 +8,16 @@
   ],
   "autoload": {
     "psr-4": {
-      "": "src/"
+      "App\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tests\\": "tests/"
+      "Test\\": "tests/"
     }
   },
-  "require": {}
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  }
 }

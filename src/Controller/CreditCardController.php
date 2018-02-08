@@ -1,9 +1,9 @@
 <?php
 
-namespace controller;
+namespace App\Controller;
 
-use model\CreditCard;
-use validator\CreditCardValidator;
+use App\Model\CreditCard;
+use App\Validator\CreditCardValidator;
 
 class CreditCardController
 {
@@ -26,7 +26,7 @@ class CreditCardController
      */
     public function renderCreditCardView()
     {
-        return (include __DIR__ . '/../view/validation_view.php');
+        return (include __DIR__ . '/../View/validation_view.php');
     }
 
     /**

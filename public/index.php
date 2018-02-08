@@ -8,9 +8,9 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use controller\CreditCardController;
-use validator\CreditCardValidator;
-use helper\ObjectHelper;
+use App\Controller\CreditCardController;
+use App\Validator\CreditCardValidator;
+use App\Helper\ObjectHelper;
 
 $creditCardValidator = new CreditCardValidator();
 

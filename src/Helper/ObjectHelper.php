@@ -1,8 +1,8 @@
 <?php
 
-namespace helper;
+namespace App\Helper;
 
-use model\CreditCard;
+use App\Model\CreditCard;
 
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.

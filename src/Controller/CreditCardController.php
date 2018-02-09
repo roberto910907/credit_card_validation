@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Model\CreditCard;
 use App\Session\Interfaces\SessionInterface;
-use App\Validator\CreditCardValidator;
 use App\Validator\Interfaces\ValidatorInterface;
 
 class CreditCardController
@@ -25,17 +24,17 @@ class CreditCardController
     }
 
     /**
-     * Render the credit card validation view
+     * Render the credit card validation view.
      *
      * @return string
      */
     public function renderCreditCardView()
     {
-        return (include __DIR__ . '/../View/validation_view.php');
+        return include __DIR__.'/../View/validation_view.php';
     }
 
     /**
-     * Main method for validating a credit card object
+     * Main method for validating a credit card object.
      *
      * @param CreditCard $creditCard
      *
@@ -48,7 +47,7 @@ class CreditCardController
 
     /**
      * Method to check if the argument is a valid credit card number
-     * This method can be re-used for other functions in different parts of the application
+     * This method can be re-used for other functions in different parts of the application.
      *
      * @param string $creditCardNumber
      *
@@ -58,6 +57,6 @@ class CreditCardController
     {
         $this->session->set(CreditCard::IS_VALID_RESULT, $this->creditCardValidator->validate($creditCardNumber));
 
-        return (include __DIR__ . '/../View/validation_view.php');
+        return include __DIR__.'/../View/validation_view.php';
     }
 }

@@ -1,11 +1,12 @@
 <?php
 
 namespace App\Model;
+
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.
+ *
  * @version Exercise v1.0 06/02/18 11:29 PM
  */
-
 class CreditCard
 {
     const IS_VALID_RESULT = 'is_valid_card';

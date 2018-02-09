@@ -1,6 +1,7 @@
 <?php
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.
+ *
  * @version Exercise v1.0 07/02/18 11:09 AM
  */
 
@@ -50,7 +51,7 @@ class CreditCardValidatorTest extends TestCase
     }
 
     /**
-     * List of valid credit card numbers
+     * List of valid credit card numbers.
      *
      * @source http://credit-card-generator.2-ee.com/q_valid-working-credit-card-numbers.htm
      */
@@ -65,7 +66,7 @@ class CreditCardValidatorTest extends TestCase
     }
 
     /**
-     * List of invalid credit card numbers
+     * List of invalid credit card numbers.
      */
     public function invalidCreditCardNumberProvider()
     {

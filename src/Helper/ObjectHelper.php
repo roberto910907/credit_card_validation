@@ -1,6 +1,7 @@
 <?php
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.
+ *
  * @version Exercise v1.0 07/02/18 12:31 AM
  */
 
@@ -11,7 +12,7 @@ use App\Model\CreditCard;
 abstract class ObjectHelper
 {
     /**
-     * Creating CreditCard object model from $_POST data
+     * Creating CreditCard object model from $_POST data.
      *
      * Using Fluent Interface Design Pattern to build the object
      *

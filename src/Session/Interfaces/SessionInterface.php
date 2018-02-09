@@ -1,6 +1,7 @@
 <?php
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.
+ *
  * @version Exercise v1.0 08/02/18 12:02 PM
  */
 
@@ -11,9 +12,9 @@ interface SessionInterface
     /**
      * Starts the session storage.
      *
-     * @return bool True if session started
-     *
      * @throws \RuntimeException if session fails to start
+     *
+     * @return bool True if session started
      */
     public function start();
 

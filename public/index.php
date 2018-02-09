@@ -1,17 +1,17 @@
 <?php
 /**
- * Implementing front controller design pattern
+ * Implementing front controller design pattern.
  *
  * @author  Roberto Rielo <roberto910907@gmail.com>.
+ *
  * @version Exercise v1.0 06/02/18 23:35 PM
  */
-
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__.'/../vendor/autoload.php';
 
 use App\Controller\CreditCardController;
-use App\Validator\CreditCardValidator;
 use App\Helper\ObjectHelper;
 use App\Session\Session;
+use App\Validator\CreditCardValidator;
 
 $session = new Session();
 $creditCardValidator = new CreditCardValidator();

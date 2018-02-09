@@ -1,13 +1,14 @@
 <?php
 /**
  * @author  Roberto Rielo <roberto910907@gmail.com>.
+ *
  * @version Exercise v1.0 07/02/18 09:17 PM
  */
 
 namespace Test\Helper;
 
-use PHPUnit\Framework\TestCase;
 use App\Helper\NumberHelper;
+use PHPUnit\Framework\TestCase;
 
 class NumberHelperTest extends TestCase
 {

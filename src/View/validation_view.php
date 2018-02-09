@@ -1,7 +1,7 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="assets/css/style.css">
 
-<?php include 'components/flashbagComponent.php' ?>
+<?php include 'components/flashbagComponent.php'; ?>
 
 <form id="credit-card-form" class="credit-card" action="/index.php" method="POST">
     <div class="form-header">

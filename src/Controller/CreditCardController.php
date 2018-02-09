@@ -47,7 +47,7 @@ class CreditCardController
     }
 
     /**
-     * Method to check if the argument it's a valid credit card number
+     * Method to check if the argument is a valid credit card number
      * This method can be re-used for other functions in different parts of the application
      *
      * @param string $creditCardNumber

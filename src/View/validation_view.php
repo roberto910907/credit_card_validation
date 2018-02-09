@@ -1,4 +1,4 @@
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+<link href='assets/css/fonts.css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="assets/css/style.css">
 
 <?php include 'components/flashbagComponent.php'; ?>
